@@ -4,10 +4,10 @@ Welcome to the CodeSample repository by Sifars! Here, you'll find a collection o
 
 ## Table of Contents
 
-- [Java Samples](./JavaSamples/README.md)
+- [Java Samples](<./Java Samples/README.md>)
 - [React.js Samples](./ReactSamples/README.md)
-- [Node.js Samples](./NodeSamples/README.md)
-- [Python Samples](./PythonSamples/README.md)
+- [Node.js Samples](< ./Node Samples/README.md>)
+- [Python Samples](<./Python Samples/README.md>)
 - [Terraform Samples](./TerraformSamples/README.md)
 
 ## About Sifars
@@ -16,12 +16,11 @@ Sifars is a dedicated software development organization with a passion for craft
 
 ## Java Samples
 
-In the [Java Samples](./JavaSamples/README.md) section, you'll discover Sifars' Java projects, including:
+In the [Java Samples](<./Java Samples/README.md>) section, you'll discover Sifars' Java projects, including:
 
-- Project A: Description of the project and its significance.
-- Project B: Description of the project and its significance.
+- [BlockEthServiceImplementation](<./Java Samples/BlockEthServiceImplementation.java>)
 
-[Explore Java Samples](./JavaSamples/README.md)
+[Explore Java Samples](<./Java Samples/README.md>)
 
 ## React.js Samples
 
