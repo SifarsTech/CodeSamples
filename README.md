@@ -4,10 +4,10 @@ Welcome to the CodeSample repository by Sifars! Here, you'll find a collection o
 
 ## Table of Contents
 
-- [Java Samples](./JavaSamples/README.md)
+- [Java Samples](<./Java Samples/Block Eth Service/README.md>)
 - [React.js Samples](./ReactSamples/README.md)
-- [Node.js Samples](./NodeSamples/README.md)
-- [Python Samples](./PythonSamples/README.md)
+- [Node.js Samples](<./Node.js Samples/Offer Request Controller/README.md>)
+- [Python Samples](<./Python Samples/Vector Embed Service/README.md>)
 - [Terraform Samples](./TerraformSamples/README.md)
 
 ## About Sifars
@@ -16,12 +16,11 @@ Sifars is a dedicated software development organization with a passion for craft
 
 ## Java Samples
 
-In the [Java Samples](./JavaSamples/README.md) section, you'll discover Sifars' Java projects, including:
+In the [Java Samples](<./Java Samples/Block Eth Service/README.md>) section, you'll discover Sifars' Java projects, including:
 
-- Project A: Description of the project and its significance.
-- Project B: Description of the project and its significance.
+- [Block Eth Service](<./Java Samples/Block Eth Service/BlockEthServiceImplementation.java>)
 
-[Explore Java Samples](./JavaSamples/README.md)
+[Explore Java Samples](<./Java Samples/Block Eth Service/README.md>)
 
 ## React.js Samples
 
@@ -34,21 +33,19 @@ In the [React.js Samples](./ReactSamples/README.md) section, you'll find example
 
 ## Node.js Samples
 
-Visit the [Node.js Samples](./NodeSamples/README.md) section to view Node.js projects, including:
+Visit the [Node.js Samples](<./Node.js Samples/Offer Request Controller/README.md>) section to view Node.js projects, including:
 
-- Project M: Overview of a Node.js server application and its capabilities.
-- Project N: Description of a Node.js REST API and its endpoints.
+- [Offer Request Controller](<./Node.js Samples/Offer Request Controller/get-offer-request.js>)
 
-[Explore Node.js Samples](./NodeSamples/README.md)
+[Explore Node.js Samples](<./Node.js Samples/Offer Request Controller/README.md>)
 
 ## Python Samples
 
-In the [Python Samples](./PythonSamples/README.md) section, you'll find Python code samples, including:
+In the [Python Samples](<./Python Samples/Vector Embed Service/README.md>) section, you'll find Python code samples, including:
 
-- Project P: Explanation of a Python data analysis script and its results.
-- Project Q: Description of a Python web scraping tool and its use cases.
+- [Vector Embed Service](<./Python Samples/Vector Embed Service/vector_embed.py>)
 
-[Explore Python Samples](./PythonSamples/README.md)
+[Explore Python Samples](<./Python Samples/Vector Embed Service/README.md>)
 
 ## Terraform Samples
 
@@ -66,5 +63,3 @@ If you have any questions, need further information, or would like to discuss po
 Thank you for visiting our CodeSample repository, and we look forward to the opportunity to work with you!
 
 ---
-
-
