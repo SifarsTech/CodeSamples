@@ -8,7 +8,7 @@ Welcome to the CodeSample repository by Sifars! Here, you'll find a collection o
 - [React.js](./React.js/)
 - [Node.js](./Node.js/)
 - [Python](./Python/)
-- [Terraform](./Terraform/)
+- [Terraform](./terraform/)
 
 ## About Sifars
 
