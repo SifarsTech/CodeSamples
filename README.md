@@ -8,7 +8,7 @@ Welcome to the CodeSample repository by Sifars! Here, you'll find a collection o
 - [React.js Samples](./ReactSamples/README.md)
 - [Node.js Samples](<./Node.js Samples/Offer Request Controller/README.md>)
 - [Python Samples](<./Python Samples/Vector Embed Service/README.md>)
-- [Terraform Samples](./TerraformSamples/README.md)
+- [Terraform Samples](./terraform/)
 
 ## About Sifars
 
