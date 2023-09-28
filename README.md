@@ -50,8 +50,8 @@ In the [Python Samples](<./Python>) section, you'll find Python code samples, in
 
 The [Terraform Samples](./Terraform/) section showcases infrastructure as code using Terraform, including:
 
-- [Trainings](<./Terraform/trainings/>): Part of resources, employed for creating environments for our collaborative sessions.
-- [Whitelisting](<./Terraform//whitelisting/>): Part of version controlled resources, provided to developers for self service, in this case to whitelist IPs for database access.
+- [Trainings](<./terraform/trainings/>): Part of resources, employed for creating environments for our collaborative sessions.
+- [Whitelisting](<./terraform//whitelisting/>): Part of version controlled resources, provided to developers for self service, in this case to whitelist IPs for database access.
 
 [Explore Terraform Samples](./terraform/)
 
