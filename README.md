@@ -5,7 +5,7 @@ Welcome to the CodeSample repository by Sifars! Here, you'll find a collection o
 ## Table of Contents
 
 - [Java Samples](<./Java Samples/Block Eth Service/README.md>)
-- [React.js Samples](./ReactSamples/README.md)
+- [React.js Samples](<./React Samples/Data Table Component/README.md>)
 - [Node.js Samples](<./Node.js Samples/Offer Request Controller/README.md>)
 - [Python Samples](<./Python Samples/Vector Embed Service/README.md>)
 - [Terraform Samples](./TerraformSamples/README.md)
@@ -24,12 +24,11 @@ In the [Java Samples](<./Java Samples/Block Eth Service/README.md>) section, you
 
 ## React.js Samples
 
-In the [React.js Samples](./ReactSamples/README.md) section, you'll find examples of Sifars' work with React.js, such as:
+In the [React.js Samples](<./React Samples/Data Table Component/README.md>) section, you'll discover Sifars' React.js projects, including:
 
-- Project X: Explanation of the React.js application and its features.
-- Project Y: Explanation of the React.js component library and its usage.
+- [Data Table Component](<./React Samples/Data Table Component/index.jsx>)
 
-[Explore React.js Samples](./ReactSamples/README.md)
+[Explore React.js Samples](<./React Samples/Data Table Component/README.md>)
 
 ## Node.js Samples
 
