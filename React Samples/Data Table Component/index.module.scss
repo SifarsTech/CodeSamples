@@ -1,0 +1,239 @@
+/* Import variables for consistent styling */
+@import "../../styles/variables";
+
+/* Style for the container of submitted-by information */
+.submittedByContainer {
+  > p {
+    word-wrap: break-word; /* Allow long text to break into multiple lines */
+  }
+}
+
+/* Main container for the data table */
+.dataTableMainContainer {
+  /* Hide the heading container by default */
+  .tableHeadingContainer {
+    display: none;
+  }
+
+  /* Styling for the table rows */
+  .tableContentContainer:hover {
+    border-color: $green100; /* Highlight the row on hover */
+    background: lighten($green100, 40%);
+  }
+  .tableContentContainer {
+    flex-wrap: wrap;
+    background: $gray25;
+    padding: 16px;
+    border-radius: 14px;
+    margin-bottom: 16px;
+    border: 1px solid transparent;
+    .assignedDropDown {
+      background-color: white; /* Background color for assigned employee dropdown */
+    }
+
+    > div {
+      &:nth-child(1) {
+        padding-bottom: 16px;
+        margin-bottom: 16px;
+        border-bottom: 1px solid lighten($black50, 40%);
+
+        p {
+          &:nth-child(1) {
+            color: $black75; /* Color for the first paragraph */
+            font-size: unit(18px);
+            font-weight: 400;
+          }
+
+          &:nth-child(2) {
+            color: $black50; /* Color for the second paragraph */
+            font-size: unit(14px);
+            font-weight: 400;
+          }
+        }
+      }
+
+      &.statusMainContainer {
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+
+        > div {
+          border-radius: 30px;
+          padding: 16px;
+          font-size: unit(14px);
+          font-weight: 500;
+        }
+      }
+    }
+
+    &.activeContentContainer {
+      border-color: $green100; /* Border color for active content */
+      background: lighten($green100, 40%);
+
+      > div {
+        &:nth-child(1) {
+          border-bottom: 1px solid lighten($green100, 20%);
+
+          p {
+            &:nth-child(1) {
+              color: $green100; /* Color for the first paragraph in active content */
+            }
+
+            &:nth-child(2) {
+              color: $black75; /* Color for the second paragraph in active content */
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* Responsive layout for columns */
+  .flexContainer {
+    > div {
+      &:nth-child(1) {
+        flex: 0 0 100%; /* Width of the first column */
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        display: none; /* Hide the second and third columns */
+      }
+
+      &:nth-child(4) {
+        flex: 0 0 48%; /* Width of the fourth column */
+      }
+
+      &:nth-child(5) {
+        flex: 0 0 48%; /* Width of the fifth column */
+        word-break: break-all; /* Break long words */
+      }
+    }
+  }
+}
+
+/* Media query for tablets (min-width: $width768) */
+@media (min-width: $width768) {
+  .dataTableMainContainer {
+    .tableHeadingContainer {
+      display: block;
+      border: 1px solid lighten($black50, 40%);
+      padding: 16px;
+      border-radius: 14px;
+      margin-bottom: 16px;
+      font-weight: 400;
+      font-size: unit(14px);
+    }
+
+    .tableContentContainer {
+      flex-wrap: nowrap;
+
+      > div {
+        &:nth-child(1) {
+          padding-bottom: 0;
+          margin-bottom: 0;
+          border-bottom: 0;
+        }
+
+        &:nth-child(2) {
+          p {
+            &:nth-child(1) {
+              font-weight: 600;
+            }
+
+            &:nth-child(2) {
+              font-size: unit(14px);
+            }
+          }
+        }
+
+        &:nth-child(3) {
+          p {
+            &:nth-child(1) {
+              font-weight: 600;
+              color: $black75;
+              font-size: unit(14px);
+            }
+
+            &:nth-child(2) {
+              font-size: unit(16px);
+              font-weight: 600;
+              color: $black50;
+            }
+
+            &:nth-child(3) {
+              font-size: unit(14px);
+              font-weight: 400;
+              color: $black50;
+            }
+          }
+        }
+      }
+
+      &.activeContentContainer {
+        > div {
+          &:nth-child(1) {
+            border-bottom: 0;
+          }
+        }
+      }
+    }
+
+    /* Responsive layout for columns on tablets */
+    .flexContainer {
+      > div {
+        text-align: center;
+
+        &:not(:last-child) {
+          border-right: 1px solid lighten($black50, 40%);
+        }
+
+        &:nth-child(1) {
+          flex: 1 0 22%;
+          text-align: left;
+          padding-right: 16px;
+          max-width: 22%;
+        }
+
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4),
+        &:nth-child(5) {
+          display: block;
+          flex: 1 0 19.5%;
+          padding: 0 16px;
+        }
+
+        &:nth-child(5) {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
+
+/* Media query for larger screens (min-width: $width1200) */
+@media (min-width: $width1200) {
+  .dataTableMainContainer {
+    /* Responsive layout for columns on larger screens */
+    .flexContainer {
+      > div {
+        &:nth-child(1) {
+          flex: 1 0 30%;
+        }
+
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4),
+        &:nth-child(5) {
+          flex: 1 0 15%;
+        }
+
+        &:nth-child(4) {
+          flex: 1 0 25%;
+        }
+      }
+    }
+  }
+}
