@@ -8,7 +8,7 @@ Welcome to the CodeSample repository by Sifars! Here, you'll find a collection o
 - [React.js Samples](<./React Samples/Data Table Component/README.md>)
 - [Node.js Samples](<./Node.js Samples/Offer Request Controller/README.md>)
 - [Python Samples](<./Python Samples/Vector Embed Service/README.md>)
-- [Terraform Samples](./TerraformSamples/README.md)
+- [Terraform Samples](./terraform/)
 
 ## About Sifars
 
@@ -50,10 +50,10 @@ In the [Python Samples](<./Python Samples/Vector Embed Service/README.md>) secti
 
 The [Terraform Samples](./TerraformSamples/README.md) section showcases infrastructure as code using Terraform, including:
 
-- Project T: Overview of a Terraform configuration for cloud provisioning.
-- Project U: Description of Terraform modules and their reusability.
+- Trainings: Part of resources, employed for creating environments for our collaborative sessions.
+- Whitelisting: Part of version controlled resources, provided to developers for self service, in this case to whitelist IPs for database access.
 
-[Explore Terraform Samples](./TerraformSamples/README.md)
+[Explore Terraform Samples](./terraform/)
 
 ## Contact Sifars
 

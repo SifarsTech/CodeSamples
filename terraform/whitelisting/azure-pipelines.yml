@@ -1,0 +1,32 @@
+name: Dev DB firewall whitelist
+
+trigger:
+- main
+
+variables:
+- group: terraform
+
+resources:
+- repo: self
+
+stages:
+- stage: Build
+  displayName: Build image
+  jobs:
+  - job: Build
+    displayName: Build
+    pool:
+      vmImage: ubuntu-latest
+    steps:
+    - task: Docker@2
+      displayName: Build an image
+      inputs:
+        command: build
+        dockerfile: Dockerfile
+        arguments: |
+          --build-arg ARM_TENANT_ID=$(ARM_TENANT_ID)
+          --build-arg ARM_CLIENT_ID=$(ARM_CLIENT_ID)
+          --build-arg ARM_CLIENT_SECRET=$(ARM_CLIENT_SECRET)
+          --build-arg ARM_SUBSCRIPTION_ID=$(ARM_SUBSCRIPTION_ID)
+          --build-arg AZDO_ORG_SERVICE_URL=$(AZDO_ORG_SERVICE_URL)
+
