@@ -1,0 +1,183 @@
+/* Import variables from a stylesheet */
+@import "../../../styles/variables";
+
+/* Define styles for error labels */
+.errorLabel {
+  color: red;
+  padding: 5px;
+  font-size: 15px;
+}
+
+/* Define styles for address column */
+.addressColumn {
+  > div {
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+/* Define styles for the customer information container */
+.customerInformationContainer {
+  /* Commented out padding properties (can be enabled if needed) */
+  /* padding-top: 32px; */
+  /* padding-bottom: 64px; */
+
+  /* Styles for the header container */
+  .headerContainer {
+    display: none;
+    margin-top: 32px;
+
+    /* Styles for the header title */
+    .headerTitle {
+      font-weight: 700;
+      font-size: unit(16px);
+    }
+  }
+
+  /* Styles for the content container */
+  .contentContainer {
+    > div {
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  /* Styles for the address container */
+  .addressContainer {
+    margin-top: 16px;
+
+    /* Styles for the address content */
+    .addressContent {
+      margin-top: 16px;
+
+      /* Styles for the header title within address content */
+      .headerTitle {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+
+/* Media query for screens with a minimum width of $width576 */
+@media (min-width: $width576) {
+  /* Adjust styles for the address column */
+  .addressColumn {
+    > div {
+      &:nth-child(1) {
+        flex-wrap: wrap;
+        max-width: 100%;
+
+        > div {
+          max-width: 100%;
+          flex: 0 0 100%;
+
+          &:nth-child(1) {
+            margin-bottom: 8px;
+          }
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+/* Media query for screens with a minimum width of $width768 */
+@media (min-width: $width768) {
+  /* Further adjust styles for the address column */
+  .addressColumn {
+    > div {
+      flex: 0 0 48%;
+      max-width: 48%;
+
+      &:nth-child(1) {
+        flex-wrap: wrap;
+        flex: 0 0 100%;
+        max-width: 100%;
+
+        > div {
+          flex: 0 0 100%;
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  /* Adjust styles for the customer information container */
+  .customerInformationContainer {
+    width: 70%;
+
+    /* Styles for the header container within customer information */
+    .headerContainer {
+      display: block;
+
+      /* Styles for the header title within header container */
+      .headerTitle {
+        font-size: unit(24px);
+        margin-bottom: 32px;
+      }
+    }
+
+    /* Styles for the content container within customer information */
+    .contentContainer {
+      > div {
+        flex: 0 0 48%;
+        max-width: 48%;
+
+        &:nth-child(5) {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+      }
+    }
+
+    /* Styles for the address container within customer information */
+    .addressContainer {
+      /* Styles for the slider button container */
+      .sliderBtnContainer {
+        width: 70%;
+      }
+
+      /* Styles for the address content within address container */
+      .addressContent {
+        /* Styles for the header title within address content */
+        .headerTitle {
+          width: 50%;
+          font-size: unit(16px);
+        }
+      }
+    }
+  }
+}
+
+/* Media query for screens with a minimum width of $width992 */
+@media (min-width: $width992) {
+  /* Further adjust styles for the customer information container */
+  .customerInformationContainer {
+    width: 60%;
+
+    /* Styles for the header container within customer information */
+    .headerContainer {
+      /* Styles for the header title within header container */
+      .headerTitle {
+        font-size: unit(24px);
+        margin-bottom: 32px;
+      }
+    }
+  }
+}
+
+/* Media query for screens with a minimum width of $width1200 */
+@media (min-width: $width1200) {
+  /* Further adjust styles for the customer information container */
+  .customerInformationContainer {
+    width: 55%;
+  }
+}
