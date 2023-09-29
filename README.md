@@ -27,7 +27,7 @@ In the [Java Samples](./Java) section, you'll discover Sifars' Java projects, in
 In the [React.js Samples](./React.js/) section, you'll discover Sifars' React.js projects, including:
 
 - [Data Table Component](<./React.js/Data Table Component/index.jsx>)
-- [Customer Information Form](<./React.js/Customer Information Form/index.jsx>)
+- [React Hook Form](<./React.js/React Hook Form/index.jsx>)
 
 [Explore React.js Samples](./React.js/)
 
